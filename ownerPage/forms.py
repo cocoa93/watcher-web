@@ -11,6 +11,7 @@ class LoginForm(forms.Form):
             }
         )
     )
+
     password = forms.CharField(
         widget=forms.PasswordInput(
             attrs={
