@@ -79,10 +79,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'watcher',
-        'USER': 'root',
+        'USER': 'cocoa9125',
         'PASSWORD': 'slsksh12',
-        'HOST': '',
-        'PORT': '3306',
+        'HOST': 'cocoa9125.mysql.pythonanywhere-services.com',
     }
 }
 
