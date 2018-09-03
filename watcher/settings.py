@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'watcher.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'watcher',
+        'NAME': 'cocoa9125$watcher',
         'USER': 'cocoa9125',
         'PASSWORD': 'slsksh12',
         'HOST': 'cocoa9125.mysql.pythonanywhere-services.com',
