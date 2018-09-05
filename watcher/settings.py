@@ -83,6 +83,7 @@ DATABASES = {
         'USER': 'cocoa9125',
         'PASSWORD': 'slsksh12',
         'HOST': 'cocoa9125.mysql.pythonanywhere-services.com',
+        'PORT': '3306'
     }
 }
 
