@@ -7,7 +7,7 @@ from ownerPage.models import Owners
 
 
 def index(request):
-    return render(request, "owner/index.html", {})
+    return render(request, "ownerPage/index.html", {})
 
 
 def profile(request):
@@ -20,7 +20,7 @@ def profile(request):
     else:
         owner = Owners.objects.get(user=request.user)
         form = PostForm(instance=owner)
-    return render(request, "owner/profile.html", {
+    return render(request, "ownerPage/profile.html", {
         'form': form,
     })
 
