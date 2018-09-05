@@ -10,6 +10,10 @@ def index(request):
     return render(request, "ownerPage/index.html", {})
 
 
+def main(request):
+    return render(request,"index.html",{})
+
+
 def profile(request):
     if request.method == 'POST':
         owner = Owners.objects.get(user=request.user)
