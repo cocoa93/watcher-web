@@ -1,15 +1,13 @@
-from django.contrib.auth.models import User
-from django.http import HttpResponseRedirect
+
 from django.shortcuts import render, redirect
 from django.contrib.auth import logout as django_logout
-from django.views.generic import UpdateView
 
 from ownerPage.forms import PostForm
 from ownerPage.models import Owners
 
 
 def index(request):
-    return render(request, "ownerPage/templates/index.html/", {})
+    return render(request, "ownerPage/index.html", {})
 
 
 def profile(request):
@@ -22,7 +20,7 @@ def profile(request):
     else:
         owner = Owners.objects.get(user=request.user)
         form = PostForm(instance=owner)
-    return render(request, "ownerPage/templates/profile.html/", {
+    return render(request, "ownerPage/profile.html", {
         'form': form,
     })
 
