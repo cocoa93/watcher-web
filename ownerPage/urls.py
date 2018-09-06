@@ -15,7 +15,7 @@ from django.contrib.auth import views as auth_views
 from ownerPage import views
 
 urlpatterns = [
-    path('',views.index,name='index'),
+    path('',views.index,name='main'),
     path('login/',auth_views.LoginView.as_view(),name='login'),
     path('profile/',views.profile,name='profile'),
     path('logout/',views.logout,name='logout'),

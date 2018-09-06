@@ -7,11 +7,11 @@ from ownerPage.models import Owners
 
 
 def index(request):
-    return render(request, "ownerPage/index.html", {})
+    return render(request, "ownerPage/main.html", {})
 
 
 def main(request):
-    return render(request,"index.html",{})
+    return render(request, "index.html", {})
 
 
 def profile(request):

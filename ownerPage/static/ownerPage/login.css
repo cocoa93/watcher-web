@@ -1,0 +1,23 @@
+.login__login-tab {
+    text-align: center;
+}
+.form-group{
+    margin: 5px;
+}
+label {
+    display: none;
+}
+.form-control{
+    width: 160px;
+}
+button, .login-button {
+    background-color:dimgray;
+    color: white;
+    border: solid dimgray 1px;
+    width: 80px;
+}
+button:hover, .login-button:hover{
+    background-color:white;
+    color:black;
+    border:solid black 1px;
+}
