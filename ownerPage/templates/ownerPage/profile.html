@@ -2,36 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>owner's profile page</title>
+    <!--{% load static %}
+    <link rel="stylesheet" href="{%  static 'ownerPage/style.css' %}">
+	<link rel="stylesheet" href="{%  static 'ownerPage/login.css' %}">-->
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/profile.css">
 </head>
 <body>
-<ul class="nav">
-	{% if user.is_authenticated %}
-	<li><a href="">Likes</a></li>
-	<li><a href="">Profile</a></li>
-        <li><a href="{% url 'logout' %}">Logout</a></li>
+  	<div class="header">
+		<div class="header-top">
+			<div class=members>
+				<span class="member">
+					<a href="user/">
+					users</a>
+				</span
+				><span class="member">
+					<a href="">owners</a>
+				</span>
+			</div>
+		</div>
+    	<h1 class=page-title>Watcher</h1>
+		<div class="header-bottom">
+			<h3 class=member-title>Owner's page</h3>
+		</div>
+  	</div>
+	<main class="login">
+			{% if user.is_authenticated %}
+		<ul class="nav-bar__items">
+			<li class="nav-bar__item"><a href="">Likes</a></li>
+			<li class="nav-bar__item"><a href="">Profile</a></li>
+			<li class="nav-bar__item"><a href="{% url 'logout' %}">Logout</a></li>
 
-        </ul>
+		</ul>
         <form action="" method="post">
-	{% csrf_token %}
-	<table>
-		{{ form.as_table }}
-	</table>
-	<input type="submit">
-</form>
-	{% else %}
-	<li><a href="{% url 'login' %}">Login</a></li>
-	<li><a href="">Signup</a></li>
-
-</ul>
+			{% csrf_token %}
+			<table>
+			{{ form.as_table }}
+			</table>
+			<input class="save" type="submit">
+		</form>
+		{% else %}
+		<ul class="nav-bar__items">
+			<li class="nav-bar__item"><a href="{% url 'login' %}">Login</a></li>
+			<li class="nav-bar__item"><a href="">Signup</a></li>
+		</ul>
 {% endif %}
+</main>
 
-<ul class="info-edit">
-    <li>
-    </li>
+<div class="footer">
+	<hr>
+	<div class="copyright" >Copyright © 2018 Watcher All rights reserved.</div>
+</div>
 
 
-</ul>
 
 </body>
 </html>
