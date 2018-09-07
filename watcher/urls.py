@@ -21,5 +21,5 @@ from ownerPage import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('owner/', include('ownerPage.urls'), name='owner'),
-    path('',views.main, name='index')
+    path('',views.main, name='index'),
 ]
