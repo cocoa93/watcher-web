@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'watcher.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-'''
+
 
 DATABASES = {
     'default': {
@@ -99,7 +99,7 @@ DATABASES = {
         'PORT': '3306'
     }
 }
-
+'''
 
 
 
